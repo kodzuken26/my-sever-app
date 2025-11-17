@@ -1,0 +1,132 @@
+@media(max-width: 360px){
+    .footer{
+        flex-direction: column;
+        gap: 15px;
+        padding: 2rem 1rem !important;
+        position: relative;
+    }
+    
+    /* Лого и номер на одной строке */
+    .footer > .logo-text {
+        display: inline-block;
+        font-size: 20px;
+        padding-right: 0;
+    }
+    
+    /* Перемещаем номер телефона вверх */
+    .footer-info {
+        position: absolute;
+        top: 2rem;
+        right: 1rem;
+        margin-left: 0;
+        flex-direction: row;
+    }
+    
+    .footer-number p {
+        margin-left: 0 !important;
+        font-size: 12px !important;
+        white-space: nowrap;
+    }
+    
+    /* Скрываем соц иконки в header позиции */
+    .footer-info .app-social {
+        display: none;
+    }
+    
+    /* Список в две колонки */
+    .footer > div:has(nav) {
+        width: 100%;
+        margin-top: 40px;
+    }
+    
+    .footer-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px 20px;
+        font-size: 11px;
+    }
+    
+    .footer-list-li {
+        margin: 0;
+    }
+    
+    /* Соц иконки внизу */
+    .footer-info::after {
+        content: "";
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-top: 15px;
+    }
+    
+    .app-social {
+        display: flex !important;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 10px;
+    }
+}
+@media(max-width: 768px){
+    .footer{
+        padding: 3rem 1rem !important;
+    }
+    .footer-list{
+        flex-wrap: wrap;
+    }
+    .footer-info{
+        flex-direction: column-reverse;
+        margin-left: 0;
+    }
+    .footer-number p{
+        margin-left: 0 !important;
+        font-size: 10px !important;
+    }
+    
+    .footer-number > p > span{
+        margin-left: 6px !important;
+    }
+}
+
+.footer{
+    background-color: rgba(249, 244, 226, 1);
+    color: rgba(65, 65, 65, 1);
+    display: flex;
+    padding: 2rem 4rem;
+    margin-top: 4rem;
+    align-content: center;
+    justify-content: space-evenly;
+}
+.logo-text{
+    font-weight: bold;
+    padding-right: 2.5rem;
+    font-size: 26px;
+    color: rgba(65, 65, 65, 1);
+}
+.footer-list{
+    list-style: none;
+    display: flex;
+    font-size: 12px;
+}
+.footer-list-li{
+    margin: 0 24px;
+}
+.footer-info{
+    display: flex;
+}
+.app-social{
+    display: flex;
+    gap: 10px;
+}
+.footer-number p{
+    display: flex;
+    align-content: center;
+    margin-left: 24px;
+}
+.footer-number > p > span{
+    margin-left: 12px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.footer-info{
+    margin-left: 20px;
+}

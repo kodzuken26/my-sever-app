@@ -1,0 +1,10 @@
+.main-top-string{
+    display: flex;
+    justify-content: flex-start;
+    padding: 1rem 0;
+}
+
+.main-top-img{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}

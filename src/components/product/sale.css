@@ -1,0 +1,136 @@
+/* sale.css */
+.sale-container {
+    width: 100%;
+    padding: 20px;
+}
+
+.products-grid {
+    display: grid;
+    gap: 16px;
+    width: 100%;
+}
+
+.product-card {
+    border-radius: 4px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 8px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    position: relative;
+    background: white;
+}
+
+.catalog-img {
+    text-align: center;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+.catalog-percent {
+    font-size: 16px;
+    font-weight: 500;
+    background-color: rgba(255, 102, 51, 1);
+    border-radius: 4px;
+    padding: 3px 8px;
+    width: 56px;
+    color: white;
+    position: absolute;
+    bottom: 12rem;
+    /* top: 8px;
+    left: 8px; */
+}
+
+.like {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    color: rgba(65, 65, 65, 1);
+    margin-top: 8px;
+}
+
+.price span {
+    font-size: 12px;
+    color: rgba(143, 143, 143, 1);
+}
+
+.catalog-title {
+    margin: 10px 0;
+    font-weight: normal;
+    color: rgba(65, 65, 65, 1);
+    font-size: 14px;
+    line-height: 1.3;
+}
+
+.btn-catalog {
+    border: 1px solid rgba(112, 192, 91, 1);
+    color: rgba(112, 192, 91, 1);
+    border-radius: 4px;
+    height: 40px;
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    background-color: #fff;
+    margin-top: 10px;
+    transition-duration: 300ms;
+    cursor: pointer;
+}
+
+.btn-catalog:hover {
+    background-color: rgba(255, 102, 51, 1);
+    color: white;
+    border: none;
+}
+
+/* 360px до 767px - 6 товаров в 2 колонки (все товары видны) */
+@media (max-width: 767px) {
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* Показываем все 6 товаров */
+    .product-card {
+        display: block;
+    }
+}
+
+/* 768px до 1219px - 3 товара */
+@media (min-width: 768px) and (max-width: 1219px) {
+    .products-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    /* Скрываем товары после 3-го */
+    .product-card:nth-child(n+4) {
+        display: none;
+    }
+}
+
+/* 1220px и больше - 4 товара */
+@media (min-width: 1220px) {
+    .products-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    /* Скрываем товары после 4-го */
+    .product-card:nth-child(n+5) {
+        display: none;
+    }
+}
+
+/* Меньше 360px - 2 колонки (все товары видны) */
+@media (max-width: 359px) {
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .product-card {
+        display: block;
+    }
+}

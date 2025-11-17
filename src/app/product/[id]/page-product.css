@@ -1,0 +1,30 @@
+.product-container{
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.product-line{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.h2-product-page{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 700;
+}
+.sale-string{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.sale-string h2{
+    font-size: 24px;
+    font-weight: 700;
+}
+.sale-string p{
+    display: flex;
+    align-items: center;
+}

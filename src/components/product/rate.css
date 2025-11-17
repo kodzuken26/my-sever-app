@@ -1,0 +1,151 @@
+@media (max-width: 360px){
+    .otzyv-full{
+        flex-direction: column;
+    }
+    .reviews-list{
+        margin-left: 0 !important;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .rating-row {
+        gap: 8px;
+    }
+    
+    .star-image {
+        width: 14px;
+        height: 14px;
+    }
+    
+    .rating-number,
+    .review-count {
+        font-size: 13px;
+    }
+    .reviews-list{
+        margin-left: 60px;
+    }
+    .textarea-placeholder{
+        width: 320px !important;
+    }
+}
+.otzyv-full{
+    display: flex;
+    justify-content: space-around;
+}
+.rating-distribution {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.rating-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 4px 0;
+}
+
+.rating-number {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    min-width: 20px;
+}
+
+.stars-container {
+    display: flex;
+    gap: 2px;
+    align-items: center;
+}
+
+.star-image {
+    display: block;
+    flex-shrink: 0;
+}
+
+.review-count {
+    font-size: 14px;
+    color: #666;
+    font-weight: 500;
+    min-width: 20px;
+    text-align: right;
+}
+.rating-top{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.rating-top-text{
+    font-weight: 700;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+
+.reviews-list{
+    width: 600px;
+    
+}
+.review-item{
+    margin-bottom: 40px;
+}
+.review-content{
+    display: flex;
+    margin-bottom: 8px;
+}
+.review-header{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+.review-date{
+    margin-left: 15px;
+}
+.review-comment{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+.user-rate{
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.user-rate span{
+    margin-right: 20px;
+}
+
+ .textarea-placeholder {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgba(191, 191, 191, 1);
+    resize: vertical; 
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.textarea-placeholder::placeholder {
+    color: rgba(65, 65, 65, 1);
+    font-size: 16px;
+    font-weight: 400;
+    vertical-align: top; 
+}
+
+.btn-otzyv{
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(252, 213, 186, 1);
+    color: rgba(255, 102, 51, 1);
+    font-size: 16px;
+    font-weight: 500;
+    height: 40px;
+    width: 188px;
+    margin-top: 10px;
+}
