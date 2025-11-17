@@ -6,14 +6,14 @@
         position: relative;
     }
     
-    /* Лого и номер на одной строке */
+   
     .footer > .logo-text {
         display: inline-block;
         font-size: 20px;
         padding-right: 0;
     }
     
-    /* Перемещаем номер телефона вверх */
+    
     .footer-info {
         position: absolute;
         top: 2rem;
@@ -28,12 +28,12 @@
         white-space: nowrap;
     }
     
-    /* Скрываем соц иконки в header позиции */
+    
     .footer-info .app-social {
         display: none;
     }
     
-    /* Список в две колонки */
+    
     .footer > div:has(nav) {
         width: 100%;
         margin-top: 40px;
@@ -50,7 +50,7 @@
         margin: 0;
     }
     
-    /* Соц иконки внизу */
+    
     .footer-info::after {
         content: "";
         display: block;

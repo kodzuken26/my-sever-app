@@ -6,7 +6,7 @@ export default function Sale({ products }) {
         return <div>Информация о товарах не доступна</div>;
     }
 
-    // Берем первые 6 товаров для акции
+   
     const saleProducts = products.slice(0, 6);
 
     return (

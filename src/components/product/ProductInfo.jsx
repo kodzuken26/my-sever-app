@@ -31,7 +31,7 @@ export default function ProductInfo({ product }) {
                     url: window.location.href,
                 });
             } catch (error) {
-                console.log('Ошибка分享:', error);
+                console.log('Ошибка:', error);
             }
         } else {
             
